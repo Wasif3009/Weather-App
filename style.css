@@ -97,12 +97,32 @@ p {
   margin-right: 1rem;
 }
 .hourly-item img {
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   margin-bottom: 5px;
 }
 
 .hourly-heading {
   color: white;
   margin-top: 1rem;
+}
+
+/* 1344px */
+@media (max-width: 84em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/* BELOW 1200px (LANDSCAPE TABLETS) */
+@media (max-width: 75em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 34em) {
+  html {
+    font-size: 40%;
+  }
 }
