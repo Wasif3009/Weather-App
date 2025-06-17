@@ -1,5 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* DOES NOT WORK IF ELEMENT IS POSITIONED ABSOLUTE BUT HIS PARENT CONTAINER DID NOT SETTED TO RELATIVE */
+}
+
+body {
+  background-color: #0d5c63;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-container {
+  background-color: #568d92;
+  text-align: center;
+  width: 40rem;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 2550.1);
+}
+
+.h2,
+label,
+p {
+  color: white;
+  margin: 0.8rem 0;
+}
+
+.city {
+  width: 30rem;
+  padding: 8px;
+  border-radius: 1rem;
+  border: 1px solid white;
+  margin-top: 2rem;
+}
+
+.search {
+  background-color: aqua;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  width: 10rem;
+  font-size: 1.6rem;
+  transition: 0.3s;
+}
+
+.search:hover {
+  background-color: black;
+}
+
+.temp {
+  font-size: 6rem;
+
+  margin-top: -3rem;
+}
+.weather-info {
+  font-size: 2rem;
+}
+
+.weather-img {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto 1rem;
+  margin-bottom: 0rem;
+  display: none;
+}
+
+.forecast {
+  margin-top: 5rem;
+  overflow-x: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hourly-item {
+  width: 8rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+}
+.hourly-item img {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 5px;
+}
+
+.hourly-heading {
+  color: white;
+  margin-top: 1rem;
 }
